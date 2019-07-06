@@ -10,6 +10,10 @@
 </select>
 
 <br />
+
+<input @bind="textA" class="form-control" id="text_a" type="text" />
+
+<br />
 <br />
 
 <label for="selectedValue_b">This group of input elements have @@bind declared <span style="text-decoration: underline;">last</span>. They will be rendered <span style="text-decoration: underline;">without</span> any class or id attributes.</label>
@@ -19,8 +23,16 @@
     <option value="3">Three</option>
 </select>
 
+<br />
+
+<input class="form-control" id="text_b" type="text" @bind="textB" />
+
+
 
 @functions {
     private int _selectedValueA;
     private int _selectedValueB;
+
+    private string textA;
+    private string textB;
 }
