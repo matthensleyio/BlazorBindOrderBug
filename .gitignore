@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# Include Razor output files for troubleshooting
+!/obj/Debug/netcoreapp3.0/Razor/*
