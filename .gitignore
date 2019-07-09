@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/BlazorBindOrderBug/v16
+/.vs
+/src/.vs/BlazorBindingOrderBug/v16
+/src/.vs/BlazorBindingOrderBug
