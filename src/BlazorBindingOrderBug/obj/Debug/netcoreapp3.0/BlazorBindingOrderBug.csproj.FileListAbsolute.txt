@@ -10,7 +10,10 @@ C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\bin\Debu
 C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\bin\Debug\netcoreapp3.0\BlazorBindingOrderBug.Views.dll
 C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\bin\Debug\netcoreapp3.0\BlazorBindingOrderBug.Views.pdb
 C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\obj\Debug\netcoreapp3.0\BlazorBindingOrderBug.csprojAssemblyReference.cache
+C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\obj\Debug\netcoreapp3.0\staticwebassets\BlazorBindingOrderBug.StaticWebAssets.Manifest.cache
+C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\obj\Debug\netcoreapp3.0\staticwebassets\BlazorBindingOrderBug.StaticWebAssets.xml
 C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\obj\Debug\netcoreapp3.0\BlazorBindingOrderBug.csproj.CoreCompileInputs.cache
+C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\obj\Debug\netcoreapp3.0\BlazorBindingOrderBug.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\obj\Debug\netcoreapp3.0\BlazorBindingOrderBug.RazorComponent.input.cache
 C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\obj\Debug\netcoreapp3.0\RazorDeclaration\App.razor.g.cs
 C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Index.razor.g.cs

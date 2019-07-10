@@ -9,12 +9,36 @@ namespace BlazorBindingOrderBug.Pages
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
-    using System.Net.Http;
-    using Microsoft.AspNetCore.Components.Forms;
-    using Microsoft.AspNetCore.Components.Layouts;
-    using Microsoft.AspNetCore.Components.Routing;
-    using Microsoft.JSInterop;
-    using BlazorBindingOrderBug.Shared;
+#line 1 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\_Imports.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#line 2 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\_Imports.razor"
+using Microsoft.AspNetCore.Components.Forms;
+
+#line default
+#line hidden
+#line 3 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\_Imports.razor"
+using Microsoft.AspNetCore.Components.Layouts;
+
+#line default
+#line hidden
+#line 4 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\_Imports.razor"
+using Microsoft.AspNetCore.Components.Routing;
+
+#line default
+#line hidden
+#line 5 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\_Imports.razor"
+using Microsoft.JSInterop;
+
+#line default
+#line hidden
+#line 6 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\_Imports.razor"
+using BlazorBindingOrderBug.Shared;
+
+#line default
+#line hidden
     [Microsoft.AspNetCore.Components.Layouts.LayoutAttribute(typeof(MainLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public class Index : Microsoft.AspNetCore.Components.ComponentBase
@@ -24,9 +48,68 @@ namespace BlazorBindingOrderBug.Pages
         {
             builder.AddMarkupContent(0, "<h1>Showcase Blazor Bind Attribtue Bug</h1>\r\n\r\n");
             builder.AddMarkupContent(1, "<label for=\"selectedValue_a\">This group of input elements have @bind declared <span style=\"text-decoration: underline;\">first</span>. They will be rendered <span style=\"text-decoration: underline;\">without</span> any class or id attributes.</label>\r\n");
-            builder.AddMarkupContent(2, "<select>\r\n    <option value=\"1\">One</option>\r\n    <option value=\"2\">Two</option>\r\n    <option value=\"3\">Three</option>\r\n</select>\r\n\r\n<br>\r\n\r\n<input>\r\n\r\n<br>\r\n<br>\r\n\r\n");
-            builder.AddMarkupContent(3, "<label for=\"selectedValue_b\">This group of input elements have @bind declared <span style=\"text-decoration: underline;\">last</span>. They will be rendered <span style=\"text-decoration: underline;\">without</span> any class or id attributes.</label>\r\n");
-            builder.AddMarkupContent(4, "<select class=\"form-control\" id=\"selectedValue_b\">\r\n    <option value=\"1\">One</option>\r\n    <option value=\"2\">Two</option>\r\n    <option value=\"3\">Three</option>\r\n</select>\r\n\r\n<br>\r\n\r\n<input class=\"form-control\" id=\"text_b\" type=\"text\">");
+            builder.OpenElement(2, "select");
+            builder.AddAttribute(3, "class", "form-control");
+            builder.AddAttribute(4, "id", "selectedValue_a");
+            builder.AddAttribute(5, "value", Microsoft.AspNetCore.Components.BindMethods.GetValue(
+#line 6 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\Pages\Index.razor"
+               _selectedValueA
+
+#line default
+#line hidden
+            ));
+            builder.AddAttribute(6, "onchange", Microsoft.AspNetCore.Components.EventCallback.Factory.CreateBinder(this, __value => _selectedValueA = __value, _selectedValueA));
+            builder.AddMarkupContent(7, "\r\n    ");
+            builder.AddMarkupContent(8, "<option value=\"1\">One</option>\r\n    ");
+            builder.AddMarkupContent(9, "<option value=\"2\">Two</option>\r\n    ");
+            builder.AddMarkupContent(10, "<option value=\"3\">Three</option>\r\n");
+            builder.CloseElement();
+            builder.AddMarkupContent(11, "\r\n\r\n<br>\r\n\r\n");
+            builder.OpenElement(12, "input");
+            builder.AddAttribute(13, "class", "form-control");
+            builder.AddAttribute(14, "id", "text_a");
+            builder.AddAttribute(15, "type", "text");
+            builder.AddAttribute(16, "value", Microsoft.AspNetCore.Components.BindMethods.GetValue(
+#line 14 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\Pages\Index.razor"
+              textA
+
+#line default
+#line hidden
+            ));
+            builder.AddAttribute(17, "onchange", Microsoft.AspNetCore.Components.EventCallback.Factory.CreateBinder(this, __value => textA = __value, textA));
+            builder.CloseElement();
+            builder.AddMarkupContent(18, "\r\n\r\n<br>\r\n<br>\r\n\r\n");
+            builder.AddMarkupContent(19, "<label for=\"selectedValue_b\">This group of input elements have @bind declared <span style=\"text-decoration: underline;\">last</span>. They will be rendered <span style=\"text-decoration: underline;\">without</span> any class or id attributes.</label>\r\n");
+            builder.OpenElement(20, "select");
+            builder.AddAttribute(21, "class", "form-control");
+            builder.AddAttribute(22, "id", "selectedValue_b");
+            builder.AddAttribute(23, "value", Microsoft.AspNetCore.Components.BindMethods.GetValue(
+#line 20 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\Pages\Index.razor"
+                                                         _selectedValueB
+
+#line default
+#line hidden
+            ));
+            builder.AddAttribute(24, "onchange", Microsoft.AspNetCore.Components.EventCallback.Factory.CreateBinder(this, __value => _selectedValueB = __value, _selectedValueB));
+            builder.AddMarkupContent(25, "\r\n    ");
+            builder.AddMarkupContent(26, "<option value=\"1\">One</option>\r\n    ");
+            builder.AddMarkupContent(27, "<option value=\"2\">Two</option>\r\n    ");
+            builder.AddMarkupContent(28, "<option value=\"3\">Three</option>\r\n");
+            builder.CloseElement();
+            builder.AddMarkupContent(29, "\r\n\r\n<br>\r\n\r\n");
+            builder.OpenElement(30, "input");
+            builder.AddAttribute(31, "class", "form-control");
+            builder.AddAttribute(32, "id", "text_b");
+            builder.AddAttribute(33, "type", "text");
+            builder.AddAttribute(34, "value", Microsoft.AspNetCore.Components.BindMethods.GetValue(
+#line 28 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\Pages\Index.razor"
+                                                           textB
+
+#line default
+#line hidden
+            ));
+            builder.AddAttribute(35, "onchange", Microsoft.AspNetCore.Components.EventCallback.Factory.CreateBinder(this, __value => textB = __value, textB));
+            builder.CloseElement();
         }
         #pragma warning restore 1998
 #line 32 "C:\Users\matt\source\repos\BlazorBindOrderBug\src\BlazorBindingOrderBug\Pages\Index.razor"

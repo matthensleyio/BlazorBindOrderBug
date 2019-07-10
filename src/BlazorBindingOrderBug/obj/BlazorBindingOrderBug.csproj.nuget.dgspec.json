@@ -26,12 +26,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {},
           "https://prototypd.pkgs.visualstudio.com/_packaging/Prototypd/nuget/v3/index.json": {},
           "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet": {}
         },
@@ -49,7 +43,12 @@
       "frameworks": {
         "netcoreapp3.0": {
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -58,7 +57,7 @@
               "privateAssets": "none"
             },
             "Microsoft.NETCore.App": {
-              "privateAssets": "none"
+              "privateAssets": "all"
             }
           }
         }
